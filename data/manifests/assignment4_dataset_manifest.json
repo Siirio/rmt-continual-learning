@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-10T09:28:20.495501+00:00",
+  "method": "Fixed-seed random sampling without replacement and global text deduplication",
+  "random_seed": 1234,
+  "sample_counts_per_task": {"train": 1000, "validation": 200, "test": 800},
+  "total_rows": 6000,
+  "unique_text_count": 6000,
+  "csv_file": "assignment4_real_6000.csv",
+  "csv_sha256": "75da6e2427b6ebc2418422f5b95bb47442f8d373d98697dd8f52159fe574cb82",
+  "datasets": {
+    "AG News": {
+      "huggingface_repo": "fancyzhx/ag_news",
+      "huggingface_url": "https://huggingface.co/datasets/fancyzhx/ag_news",
+      "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+      "config": null,
+      "source_splits": {
+        "train": {"total_rows": 120000, "fingerprint": "2bc1e2be15d7f2ee"},
+        "test": {"total_rows": 7600, "fingerprint": "0ebcc57b6aea2fc9"}
+      }
+    },
+    "SST-2": {
+      "huggingface_repo": "nyu-mll/glue",
+      "huggingface_url": "https://huggingface.co/datasets/nyu-mll/glue",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "config": "sst2",
+      "source_splits": {
+        "train": {"total_rows": 67349, "fingerprint": "e0f6962d602757cb"},
+        "validation": {"total_rows": 872, "fingerprint": "0e2b00033b48693f"},
+        "test": {"total_rows": 1821, "fingerprint": "7b9bed4ec843b4a3"}
+      }
+    },
+    "Emotion": {
+      "huggingface_repo": "dair-ai/emotion",
+      "huggingface_url": "https://huggingface.co/datasets/dair-ai/emotion",
+      "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+      "config": "split",
+      "source_splits": {
+        "train": {"total_rows": 16000, "fingerprint": "27c5e4f1e47ffa42"},
+        "validation": {"total_rows": 2000, "fingerprint": "5cae643edfd5aaf3"},
+        "test": {"total_rows": 2000, "fingerprint": "bd45cf0a5e0b9690"}
+      }
+    }
+  },
+  "split_hashes": [
+    {"task": 1, "task_name": "AG News", "split": "train", "count": 1000, "sha256_record_ids_and_text": "fa2736a88fa1bb395e97049ef44194b666a20f647d7b7358a2831d6cd1c54ae6"},
+    {"task": 1, "task_name": "AG News", "split": "validation", "count": 200, "sha256_record_ids_and_text": "2e475029464b6d9cc22842810c9d10fab7922bb3e8e857ae850dac1d03a401cc"},
+    {"task": 1, "task_name": "AG News", "split": "test", "count": 800, "sha256_record_ids_and_text": "e9ff0317dabbdc964c20c0524952eeeec21a17d9d5d8c895bbfd9d5e66f70b01"},
+    {"task": 2, "task_name": "SST-2", "split": "train", "count": 1000, "sha256_record_ids_and_text": "47c8c7f6f3cd7c6770567e871224d7c4720259b584cb23c09f669ee02d76fd5e"},
+    {"task": 2, "task_name": "SST-2", "split": "validation", "count": 200, "sha256_record_ids_and_text": "569263a790c6a022a0fc2da7fdaa92404639947d6ee5faf30f657222d6fbae35"},
+    {"task": 2, "task_name": "SST-2", "split": "test", "count": 800, "sha256_record_ids_and_text": "d62a60b5acaf6e46e2ffdb8ab54610031b05d26fa223177f0eb83fdda58f2fb4"},
+    {"task": 3, "task_name": "Emotion", "split": "train", "count": 1000, "sha256_record_ids_and_text": "dd70e3240db4021fa7f38de6383d4faa8ec5a54c236ff2583f85668da8651835"},
+    {"task": 3, "task_name": "Emotion", "split": "validation", "count": 200, "sha256_record_ids_and_text": "f0e77d8f766abe75a2b50ded95631b6a22361a9703efd22d4f119fcbea7fefeb"},
+    {"task": 3, "task_name": "Emotion", "split": "test", "count": 800, "sha256_record_ids_and_text": "2c8ffcab665b767d8371c852b7df10e1033904500eac73251c1e88ca9aa526d7"}
+  ],
+  "notes": [
+    "SST-2 official validation data are used as held-out test because official test labels are not public.",
+    "For AG News and SST-2, validation is drawn from official training data.",
+    "AG News test rows are drawn from the official test split and Emotion uses official train, validation, and test splits.",
+    "The Assignment 3 pilot data are not mixed into this final dataset.",
+    "All examples are unique after whitespace normalization and case-folding.",
+    "Confirm redistribution permissions before publishing Emotion social-media text."
+  ]
+}
+
