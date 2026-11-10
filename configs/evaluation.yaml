@@ -1,0 +1,13 @@
+primary_metric: FGT
+secondary_metrics: [ACC, LA, BWT, macro_f1]
+bootstrap_resamples: 10000
+confidence_level: 0.95
+random_seed: 2026
+mcnemar_exact: true
+multiple_comparison_correction: holm
+resource_metrics:
+  - training_time_seconds
+  - peak_gpu_memory_mb
+  - optimizer_steps
+  - additional_storage_bytes
+

@@ -1,0 +1,16 @@
+sequential_lora:
+  adapter_policy: single_sequential_adapter
+experience_replay:
+  buffer_fraction: 0.10
+  class_stratified: true
+  sensitivity_fractions: [0.05, 0.20]
+ewc:
+  lambda: 1.0
+  calibration_values: [0.01, 0.1, 1.0, 10.0, 100.0]
+  fisher_samples: 200
+  fisher_normalization: mean_one
+  online_gamma: 1.0
+joint_training:
+  epochs: 2
+  examples: 3000
+
