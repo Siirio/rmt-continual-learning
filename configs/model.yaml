@@ -1,0 +1,18 @@
+model_name: Qwen/Qwen2.5-0.5B
+trust_remote_code: false
+torch_dtype: float32
+use_fp16_on_cuda: true
+maximum_sequence_length: 160
+text_truncation_tokens: 96
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  bias: none
+  task_type: CAUSAL_LM
+
