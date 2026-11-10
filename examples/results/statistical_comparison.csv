@@ -1,0 +1,5 @@
+method,task,accuracy_difference_pp,ci_lower_pp,ci_upper_pp,method_only_correct,baseline_only_correct,mcnemar_p,holm_adjusted_p
+experience_replay,ag_news,15.625,12.958,18.375,768,393,1.6750121675086167e-28,6.700048670034467e-28
+experience_replay,sst2,10.833,8.5,13.167,540,280,7.39153776744561e-20,2.217461330233683e-19
+ewc,ag_news,11.375,8.542,14.125,727,454,1.86546021901797e-15,3.73092043803594e-15
+ewc,sst2,8.0,5.625,10.375,530,338,7.567479015699049e-11,7.567479015699049e-11

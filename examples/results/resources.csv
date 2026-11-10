@@ -1,0 +1,13 @@
+method,seed,training_time_minutes,peak_gpu_memory_mb,additional_storage_bytes,optimizer_steps
+sequential_lora,0,26.62,6915,0,375
+sequential_lora,1,26.875,6825,0,375
+sequential_lora,2,27.307,6917,0,375
+experience_replay,0,31.199,7498,94000,425
+experience_replay,1,31.77,7541,94000,425
+experience_replay,2,31.843,7642,94000,425
+ewc,0,35.372,8367,8700000,375
+ewc,1,35.734,8521,8700000,375
+ewc,2,34.463,8309,8700000,375
+joint_training,0,28.734,7229,0,375
+joint_training,1,29.387,7051,0,375
+joint_training,2,29.347,7050,0,375
