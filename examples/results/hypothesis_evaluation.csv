@@ -1,0 +1,3 @@
+hypothesis,example_status,evidence
+H1,Supported,ER and EWC show lower FGT than Seq-LoRA in the deterministic example package.
+H2,Supported,ER improves retention with additional training time and replay storage.

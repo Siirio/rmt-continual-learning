@@ -1,0 +1,4 @@
+buffer_fraction,buffer_examples_per_task,ACC_percent,FGT_pp,time_minutes,storage_bytes
+0.05,50,73.6,12.8,29.8,47000
+0.1,100,77.6,9.5,31.8,94000
+0.2,200,79.1,7.9,36.2,188000

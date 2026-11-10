@@ -1,0 +1,5 @@
+method,method_display,ACC_mean_percent,ACC_sd_percent,macro_f1_mean_percent,macro_f1_sd_percent,LA_mean_percent,BWT_mean_pp,FGT_mean_pp,training_time_mean_minutes,peak_gpu_memory_mean_mb,additional_storage_bytes
+sequential_lora,Seq-LoRA,68.5,0.26,68.5,0.26,83.94,-23.15,23.15,26.93,6885.7,0
+experience_replay,ER (10%),77.48,0.6,77.47,0.61,84.41,-10.4,10.4,31.6,7560.3,94000
+ewc,Online EWC,74.78,0.19,74.79,0.16,82.89,-12.17,12.17,35.19,8399.0,8700000
+joint_training,Joint,83.36,0.55,83.37,0.56,,,,29.16,7110.0,0

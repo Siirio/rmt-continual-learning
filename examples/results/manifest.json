@@ -1,0 +1,39 @@
+{
+  "package_type": "deterministic_illustrative_example",
+  "generator_seed": 20261110,
+  "measured_model_runs": false,
+  "methods": [
+    "sequential_lora",
+    "experience_replay",
+    "ewc",
+    "joint_training"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "files": [
+    "accuracy_matrices.json",
+    "confusion_matrices.json",
+    "error_categories.csv",
+    "hypothesis_evaluation.csv",
+    "main_comparison.csv",
+    "per_seed_metrics.csv",
+    "replay_sensitivity.csv",
+    "resources.csv",
+    "runs/ewc_seed0.json",
+    "runs/ewc_seed1.json",
+    "runs/ewc_seed2.json",
+    "runs/experience_replay_seed0.json",
+    "runs/experience_replay_seed1.json",
+    "runs/experience_replay_seed2.json",
+    "runs/joint_training_seed0.json",
+    "runs/joint_training_seed1.json",
+    "runs/joint_training_seed2.json",
+    "runs/sequential_lora_seed0.json",
+    "runs/sequential_lora_seed1.json",
+    "runs/sequential_lora_seed2.json",
+    "statistical_comparison.csv"
+  ]
+}
